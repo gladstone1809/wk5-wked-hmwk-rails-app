@@ -1,0 +1,6 @@
+<h1><%= @membersclub.name %></h1>
+<h2><%= @membersclub.location %></h2>
+<h3><%= @membersclub.genre %></h3>
+
+<%= link_to 'Edit', edit_membersclub_path(@membersclub) %>
+<%= link_to 'Delete', @membersclub, method: :delete, data: { confirm: "Are you sure?" } %>

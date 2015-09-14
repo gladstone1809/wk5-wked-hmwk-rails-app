@@ -1,0 +1,5 @@
+<h1>index</h1>
+
+<% @memberships.each do |membership| %>
+  <h2><%= link_to membership.membership_id, membership %></h2>
+<% end %>

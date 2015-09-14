@@ -1,0 +1,7 @@
+<h1><%= @guest.name %></h1>
+<h2><%= @guest.gender %></h2>
+<p><%= @guest.age %></p>
+
+
+<%= link_to 'Edit', edit_guest_path(@guest) %>
+<%= link_to 'Delete', @guest, method: :delete, data: { confirm: "Are you sure?" } %>

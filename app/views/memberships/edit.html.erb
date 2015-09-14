@@ -1,0 +1,14 @@
+<%= form_for @membership do |form| %>
+  <div class="field">
+    <%= form.label :guest_id %>
+    <%= form.text_field :guest_id %>
+  </div>
+  <div class="field">
+    <%= form.label :membersclub_id %>
+    <%= form.text_field :membersclub_id %>
+  </div>
+  <div class="action">
+    <%= form.submit 'Update Membership' %>
+  </div>
+
+<% end %>
